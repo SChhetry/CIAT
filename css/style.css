@@ -503,7 +503,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 319px) {
+@media only screen and (max-width: 300px) {
   .container header .heading h3 {
     font-size: 0.7rem;
     font-weight: 800;
