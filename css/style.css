@@ -1,0 +1,554 @@
+.btn:hover {
+  background-color: #1f9e1b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: ERASBD;
+  src: url(../fonts/ERASBD.TTF);
+}
+
+.btn {
+  width: 130px;
+  height: 40px;
+  background-color: #ff3333;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.container header {
+  background-color: #333366;
+}
+
+.container header .heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header .heading h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 1.2rem 0;
+}
+
+.container header .heading .jh_logo {
+  padding-top: 0.5rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.container .ciat_logo {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.container .ciat_logo img {
+  width: 60%;
+}
+
+.container nav {
+  background-color: #333366;
+}
+
+.container nav .menubar {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.container nav .menubar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.container nav .menubar ul li {
+  list-style: none;
+  -webkit-transition: all 1s ease-in-out 1ms;
+  transition: all 1s ease-in-out 1ms;
+}
+
+.container nav .menubar ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container nav .menubar ul li:hover {
+  background-color: #ff3333;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+.container nav .menubar .fa {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  display: none;
+  padding-right: 0.5rem;
+}
+
+.container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container .main .picture {
+  width: 70%;
+  background-size: cover;
+  background-position: center top;
+  border: 3px solid #333366;
+}
+
+.container .main .picture img {
+  width: 100%;
+}
+
+.container .main aside {
+  width: 27%;
+  text-align: center;
+  color: #333366;
+  border: 3px solid #333366;
+}
+
+.container .main aside .supervisor {
+  width: 100%;
+}
+
+.container .main aside .supervisor img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .main aside .supervisor h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: ERASBD;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.container .main aside .supervisor h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.container section article {
+  background-color: #ff3333;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#333366), to(#ff3333));
+  background-image: linear-gradient(0deg, #333366, #ff3333);
+  padding: 2rem;
+  text-align: center;
+}
+
+.container section article h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333366;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container section article h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container section article h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.container section article p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+.container section article .btn {
+  background-color: #333366;
+  margin-top: 1.5rem;
+}
+
+.container section .coureses {
+  text-align: center;
+}
+
+.container section .coureses h1 {
+  font-size: 3rem;
+  font-family: ERASBD;
+  font-weight: 700;
+  color: #ff3333;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1.5rem;
+}
+
+.container section .coureses .btn {
+  font-family: ERASBD;
+}
+
+.container .four_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.container .four_box .school {
+  width: 24.2%;
+  background-color: #333366;
+  border: 0;
+  text-align: center;
+}
+
+.container .four_box .school img {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.container .four_box .school h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 1rem 0 1.3rem 0;
+}
+
+.container .four_box .school .ten {
+  font-weight: 200;
+  overflow: auto;
+  letter-spacing: 0;
+}
+
+.container .four_box .school .btn {
+  margin-bottom: 5px;
+}
+
+.container .news {
+  background-color: #333366;
+}
+
+.container .news h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  font-family: ERASBD;
+  color: #fff;
+  padding: 10px;
+}
+
+.container .news .three_box {
+  height: 100px;
+}
+
+.container .news .three_box .news1 {
+  background: #a09797;
+  opacity: 0.7;
+  border-radius: 10px;
+  -webkit-box-shadow: 15px 10px 10px #ff3333 inset;
+          box-shadow: 15px 10px 10px #ff3333 inset;
+}
+
+.container .news .three_box .news1 h6 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.container .contact {
+  width: 100%;
+  background-color: #ff3333;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#333366), to(#ff3333));
+  background-image: linear-gradient(to bottom left, #333366, #ff3333);
+}
+
+.container .contact .details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .contact .details .box {
+  width: 32%;
+  padding: 2rem;
+  border-right: 1px solid gray;
+}
+
+.container .contact .details .box .box1 {
+  width: 100%;
+  text-align: center;
+}
+
+.container .contact .details .box .box1 h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container .contact .details .box .box1 .fa {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.container .contact .details .box .box1 h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.container .contact .details .box .box1 .email {
+  font-size: 1.3rem;
+  padding-left: 0;
+}
+
+.container .contact .details .box .box1 .address {
+  font-size: 1rem;
+  height: 3px;
+}
+
+.container .contact .details .box .box1 ul li {
+  list-style: none;
+  -webkit-transition: all 2s ease 1ms;
+  transition: all 2s ease 1ms;
+  padding: 1rem;
+}
+
+.container .contact .details .box .box1 ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container .contact .details .box .box1 ul li:hover {
+  background-color: #333366;
+  -webkit-transform: translate(-5px, -10px);
+          transform: translate(-5px, -10px);
+}
+
+.container .contact .details .no_border h2 {
+  border-right: none;
+  margin-bottom: 4rem;
+}
+
+.container footer {
+  background-color: #333366;
+}
+
+.container footer h5 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 2rem 0 0.9rem 0;
+  line-height: 1px;
+}
+
+@media only screen and (max-width: 1052px) {
+  .heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heading h3 {
+    text-align: center;
+  }
+  ul {
+    margin: 0 2.5rem;
+  }
+  .container .contact .details .box {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1124px) {
+  .container .contact .details .box .box1 h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .container header .heading h3 {
+    font-size: 1.7rem;
+  }
+  .container header .heading h3 header .heading .jh_logo img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 712px) and (min-width: 403px) {
+  .container header .heading h3 {
+    font-size: 1.3rem;
+  }
+  .container header .heading h3 header .heading .jh_logo {
+    width: 100%;
+  }
+  .container header .heading h3 header .heading .jh_logo img {
+    width: 100%;
+  }
+  .container section .coureses h1 {
+    font-size: 2.5rem;
+  }
+  .container .four_box .school {
+    width: 47%;
+    margin-bottom: 1.6rem;
+  }
+  .container .contact .details .box {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    border-spacing: 3cm;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .container nav .menubar ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #333366;
+    position: absolute;
+    left: -2.5rem;
+    top: 100%;
+    padding: 0;
+    display: none;
+  }
+  .container nav .menubar ul li {
+    padding: 1rem;
+    text-align: center;
+  }
+  .container nav .menubar .fa {
+    display: block;
+    height: auto;
+    text-align: right;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container header .heading h3 {
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
+  .container .ciat_logo img {
+    width: 100%;
+  }
+  .container .main .picture {
+    width: 100%;
+  }
+  .container .main aside {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .container section article h1 {
+    font-size: 1.8rem;
+  }
+  .container section article h2 {
+    font-size: 1.3rem;
+  }
+  .container section article h3 {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+  }
+  .container section article p {
+    font-size: 0.8rem;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  .container section .coureses h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .container .four_box .school {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  .container .contact .details .box {
+    width: 100%;
+    padding: 2rem;
+    border-right: none;
+    border-bottom: 2px solid gray;
+  }
+  .container footer h5 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
