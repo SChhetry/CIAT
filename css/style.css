@@ -417,7 +417,7 @@ html {
   line-height: 1px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1052px) {
   .heading {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -427,26 +427,48 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
-  .heading h3 {
-    text-align: center;
-  }
-  ul {
-    margin: 0 2.5rem;
-  }
-  .container .contact .details .box {
-    padding: 1rem;
-  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 839px) and (min-width: 421px) {
   .container header .heading h3 {
-    font-size: 1.3rem;
-  }
-  .container header .heading h3 header .heading .jh_logo {
-    width: 100%;
+    font-size: 1.2rem;
   }
   .container header .heading h3 header .heading .jh_logo img {
     width: 100%;
+  }
+  .container .main aside .supervisor h3 {
+    font-size: 1.2rem;
+  }
+  .container .main aside .supervisor h4 {
+    font-size: 1rem;
+  }
+  .container section .coureses h1 {
+    font-size: 2.3rem;
+  }
+  .container section article h1 {
+    font-size: 2.5rem;
+  }
+  .container section article h2 {
+    font-size: 1.4rem;
+  }
+  .container section article h3 {
+    text-align: left;
+    font-size: 1.1rem;
+    letter-spacing: 0.2px;
+  }
+  .container section article p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #a09797;
+  }
+  .container .four_box {
+    padding: 5%;
+  }
+  .container .four_box .school {
+    width: 47%;
+    margin-bottom: 1rem;
   }
   .container .contact .details .box {
     width: 100%;
@@ -454,45 +476,18 @@ html {
     border-bottom: 2px solid gray;
     border-spacing: 3cm;
   }
-  .container .contact .details .box .box1 h3 {
-    font-size: 1rem;
+  .container .contact .details .box .box1 {
+    text-align: center;
   }
-  .container section .coureses h1 {
-    font-size: 2.5rem;
-  }
-  .container .four_box .school {
-    width: 47%;
-    margin-bottom: 1.6rem;
+  .container .four_box .school .ten {
+    font-weight: 300;
   }
 }
 
-@media only screen and (max-width: 516px) {
-  .container nav .menubar ul {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #333366;
-    position: absolute;
-    left: -2.5rem;
-    top: 100%;
-    padding: 0;
-    display: none;
-  }
-  .container nav .menubar ul li {
-    padding: 1rem;
-    text-align: center;
-  }
-  .container nav .menubar .fa {
-    display: block;
-    height: auto;
-    text-align: right;
-    padding: 1rem;
-  }
+@media only screen and (max-width: 540px) and (min-width: 0px) {
   .container header .heading h3 {
-    font-size: 0.7rem;
-    font-weight: 800;
+    font-size: 0.6rem;
+    font-weight: 600;
   }
   .container .ciat_logo img {
     width: 100%;
@@ -520,12 +515,30 @@ html {
     line-height: normal;
   }
   .container section .coureses h1 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 500;
   }
   .container .four_box .school {
     width: 100%;
     margin-bottom: 1.6rem;
+  }
+  .container section article h1 {
+    font-size: 1.8rem;
+  }
+  .container section article h2 {
+    font-size: 1.1rem;
+  }
+  .container section article h3 {
+    text-align: left;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+  }
+  .container section article p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #a09797;
   }
   .container .contact .details .box {
     width: 100%;
@@ -533,8 +546,35 @@ html {
     border-right: none;
     border-bottom: 2px solid gray;
   }
+  .container .contact .details .box .box1 {
+    text-align: center;
+  }
   .container footer h5 {
     font-size: 1rem;
+  }
+  .container .contact .details .box .box1 p {
+    font-size: 0.9rem;
+  }
+  .container nav .menubar ul {
+    width: 100%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #333366;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    text-align: center;
+  }
+  .container nav .menubar li {
+    padding: 1rem;
+  }
+  .container nav .menubar .fa {
+    display: block;
+    text-align: right;
+    padding: .9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
