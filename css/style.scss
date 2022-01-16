@@ -341,7 +341,7 @@
                     }
                     // Contact details starts
                     footer {
-                        // height: 90px;
+                        width: 100%;
                         background-color: $primary-color;
                         h5 {
                             color: #fff;
@@ -355,7 +355,7 @@
                 }
                 
                 // Tablet View starts
-                @media only screen and (max-width: 1052px) {
+                @media only screen and (max-width: 1024px) {
                     .heading {
                         flex-direction: column-reverse;
                         align-items: center;
@@ -372,24 +372,7 @@
                 }
                 
                 // Tablet View ends
-                @media only screen and (max-width: 1124px) {
-                    .container .contact .details .box .box1 h3 {
-                        font-size: 1rem;
-                    }
-                }
-                
-                @media only screen and (max-width: 839px) {
-                    .container header .heading h3 {
-                        font-size: 1.7rem;
-                        header .heading .jh_logo {
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-                
-                @media only screen and (max-width: 712px) and (min-width:403px) {
+                @media only screen and (max-width: 768px) {
                     .container header .heading h3 {
                         font-size: 1.3rem;
                         header .heading .jh_logo {
@@ -399,6 +382,15 @@
                             }
                         }
                     }
+                    .container .contact .details .box {
+                        width: 100%;
+                        border-right: none;
+                        border-bottom: 2px solid gray;
+                        border-spacing: 3cm;
+                    }
+                    .container .contact .details .box .box1 h3 {
+                        font-size: 1rem;
+                    }
                     .container section .coureses h1 {
                         font-size: 2.5rem;
                     }
@@ -406,16 +398,10 @@
                         width: 47%;
                         margin-bottom: 1.6rem;
                     }
-                    .container .contact .details .box {
-                        width: 100%;
-                        border-right: none;
-                        border-bottom: 2px solid gray;
-                        border-spacing: 3cm;
-                    }
                 }
                 
-                // navigation
-                @media only screen and (max-width: 615px) {
+                // mobile
+                @media only screen and (max-width: 480px) {
                     .container nav .menubar {
                         ul {
                             width: 100%;
@@ -438,10 +424,6 @@
                             padding: 1rem;
                         }
                     }
-                }
-                
-                // mobile
-                @media only screen and (max-width: 517px) {
                     .container header .heading h3 {
                         font-size: 0.7rem;
                         font-weight: 800;
@@ -469,10 +451,7 @@
                     .container section article p {
                         font-size: 0.8rem;
                         letter-spacing: normal;
-                        // letter-spacing: 1px;
                         line-height: normal;
-                        // text-align: left;
-                        // margin-top: 0.4rem;
                     }
                     .container section .coureses h1 {
                         font-size: 1.6rem;

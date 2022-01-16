@@ -404,6 +404,7 @@ html {
 }
 
 .container footer {
+  width: 100%;
   background-color: #333366;
 }
 
@@ -416,7 +417,7 @@ html {
   line-height: 1px;
 }
 
-@media only screen and (max-width: 1052px) {
+@media only screen and (max-width: 1024px) {
   .heading {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -437,22 +438,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 1124px) {
-  .container .contact .details .box .box1 h3 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 839px) {
-  .container header .heading h3 {
-    font-size: 1.7rem;
-  }
-  .container header .heading h3 header .heading .jh_logo img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 712px) and (min-width: 403px) {
+@media only screen and (max-width: 768px) {
   .container header .heading h3 {
     font-size: 1.3rem;
   }
@@ -462,6 +448,15 @@ html {
   .container header .heading h3 header .heading .jh_logo img {
     width: 100%;
   }
+  .container .contact .details .box {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    border-spacing: 3cm;
+  }
+  .container .contact .details .box .box1 h3 {
+    font-size: 1rem;
+  }
   .container section .coureses h1 {
     font-size: 2.5rem;
   }
@@ -469,15 +464,9 @@ html {
     width: 47%;
     margin-bottom: 1.6rem;
   }
-  .container .contact .details .box {
-    width: 100%;
-    border-right: none;
-    border-bottom: 2px solid gray;
-    border-spacing: 3cm;
-  }
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 480px) {
   .container nav .menubar ul {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -501,9 +490,6 @@ html {
     text-align: right;
     padding: 1rem;
   }
-}
-
-@media only screen and (max-width: 517px) {
   .container header .heading h3 {
     font-size: 0.7rem;
     font-weight: 800;
