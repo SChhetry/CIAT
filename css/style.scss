@@ -1,513 +1,513 @@
-                $primary-color: #333366;
-                $primary-color2: #ff3333;
-                @mixin flex_property {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-                
-                @mixin btn {
-                    width: 130px;
-                    height: 40px;
-                    background-color: #ff3333;
-                    border: none;
-                    border-radius: 3px;
+$primary-color: #333366;
+$primary-color2: #ff3333;
+@mixin flex_property {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin btn {
+    width: 130px;
+    height: 40px;
+    background-color: #ff3333;
+    border: none;
+    border-radius: 3px;
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.btn:hover {
+    background-color: rgb(31, 158, 27);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: ERASBD;
+    src: url(../fonts/ERASBD.TTF);
+}
+
+.btn {
+    @include btn;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// container starts
+.container {
+    width: 100%;
+    // header starts
+    header {
+        background-color: $primary-color;
+        // overflow: auto;
+        .heading {
+            width: 100%;
+            @include flex_property();
+            h3 {
+                font-size: 2rem;
+                font-weight: 400;
+                color: #fff;
+                padding: 1.2rem 0;
+            }
+            .jh_logo {
+                padding-top: 0.5rem;
+                justify-content: left;
+            }
+        }
+    }
+    // header ends
+    // logo starts
+    .ciat_logo {
+        width: 100%;
+        padding: 1rem 0;
+        img {
+            width: 60%;
+        }
+    }
+    // logo ends
+    // menubar starts
+    nav {
+        background-color: $primary-color;
+        .menubar {
+            margin-bottom: 15px;
+            position: relative;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding: 1.2rem 0;
+                li {
+                    list-style: none;
+                    transition: all 1s ease-in-out 1ms;
                     a {
                         color: #fff;
+                        font-size: 1.5rem;
+                        font-weight: 400;
                         text-decoration: none;
-                        font-size: 18px;
-                        font-weight: 400;
                     }
                 }
-                
-                .btn:hover {
-                    background-color: rgb(31, 158, 27);
+                li:hover {
+                    background-color: $primary-color2;
+                    transform: scaleX(1.1);
                 }
-                
-                * {
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
-                
-                html {
-                    font-size: 15px;
-                    font-family: "Roboto", sans-serif;
-                }
-                
-                @font-face {
-                    font-family: ERASBD;
-                    src: url(../fonts/ERASBD.TTF);
-                }
-                
-                .btn {
-                    @include btn;
-                }
-                
-                .inner {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                }
-                
-                // container starts
-                .container {
+            }
+            .fa {
+                font-size: 1.5rem;
+                color: #fff;
+                text-decoration: none;
+                display: none;
+                padding-right: 0.5rem
+            }
+        }
+        // menubar ends
+    }
+    // main starts
+    .main {
+        @include flex_property();
+        margin-bottom: 1rem;
+        .picture {
+            width: 70%;
+            height: fit-content;
+            background-size: cover;
+            background-position: center top;
+            border: 3px solid $primary-color;
+            img {
+                width: 100%;
+            }
+        }
+        aside {
+            width: 27%;
+            text-align: center;
+            color: $primary-color;
+            border: 3px solid $primary-color;
+            .supervisor {
+                width: 100%;
+                height: fit-content;
+                img {
                     width: 100%;
-                    // header starts
-                    header {
-                        background-color: $primary-color;
-                        // overflow: auto;
-                        .heading {
-                            width: 100%;
-                            @include flex_property();
-                            h3 {
-                                font-size: 2rem;
-                                font-weight: 400;
-                                color: #fff;
-                                padding: 1.2rem 0;
-                            }
-                            .jh_logo {
-                                padding-top: 0.5rem;
-                                justify-content: left;
-                            }
-                        }
-                    }
-                    // header ends
-                    // logo starts
-                    .ciat_logo {
-                        width: 100%;
-                        padding: 1rem 0;
-                        img {
-                            width: 60%;
-                        }
-                    }
-                    // logo ends
-                    // menubar starts
-                    nav {
-                        background-color: $primary-color;
-                        .menubar {
-                            margin-bottom: 15px;
-                            position: relative;
-                            ul {
-                                display: flex;
-                                justify-content: space-between;
-                                padding: 1.2rem 0;
-                                li {
-                                    list-style: none;
-                                    transition: all 1s ease-in-out 1ms;
-                                    a {
-                                        color: #fff;
-                                        font-size: 1.5rem;
-                                        font-weight: 400;
-                                        text-decoration: none;
-                                    }
-                                }
-                                li:hover {
-                                    background-color: $primary-color2;
-                                    transform: scaleX(1.1);
-                                }
-                            }
-                            .fa {
-                                font-size: 1.5rem;
-                                color: #fff;
-                                text-decoration: none;
-                                display: none;
-                                padding-right: 0.5rem
-                            }
-                        }
-                        // menubar ends
-                    }
-                    // main starts
-                    .main {
-                        @include flex_property();
-                        margin-bottom: 1rem;
-                        .picture {
-                            width: 70%;
-                            background-size: cover;
-                            background-position: center top;
-                            border: 3px solid $primary-color;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                        aside {
-                            width: 27%;
-                            text-align: center;
-                            color: $primary-color;
-                            border: 3px solid $primary-color;
-                            .supervisor {
-                                width: 100%;
-                                // height: 470px;
-                                img {
-                                    width: 100%;
-                                    // height: 300px;
-                                    margin-bottom: 10px;
-                                }
-                                h3 {
-                                    font-size: 1.5rem;
-                                    font-weight: 500;
-                                    font-family: ERASBD;
-                                    margin-bottom: 0.5rem;
-                                    text-decoration: underline;
-                                }
-                                h4 {
-                                    font-size: 1.3rem;
-                                    font-weight: 600;
-                                    margin-bottom: 1rem;
-                                }
-                            }
-                        }
-                    }
-                    // main ends
-                    // section starts
-                    section {
-                        article {
-                            background-color: $primary-color2;
-                            background-image: linear-gradient(0deg, $primary-color, $primary-color2);
-                            padding: 2rem;
-                            text-align: center;
-                            h1 {
-                                font-size: 3rem;
-                                font-weight: 700;
-                                color: $primary-color;
-                                text-align: center;
-                                text-decoration: underline;
-                            }
-                            h2 {
-                                font-size: 1.8rem;
-                                font-weight: 400;
-                                color: #fff;
-                                text-align: center;
-                                margin: 1rem;
-                            }
-                            h3 {
-                                font-size: 1.3rem;
-                                font-weight: 400;
-                                color: #fff;
-                                letter-spacing: 0.5px;
-                            }
-                            p {
-                                font-size: 1rem;
-                                color: #fff;
-                                text-align: justify;
-                                letter-spacing: 1px;
-                                line-height: 1.7rem;
-                                margin-top: 1rem;
-                            }
-                            .btn {
-                                background-color: $primary-color;
-                                margin-top: 1.5rem;
-                            }
-                        }
-                        // article ends
-                        // coureses starts
-                        .coureses {
-                            text-align: center;
-                            h1 {
-                                font-size: 3rem;
-                                font-family: ERASBD;
-                                font-weight: 700;
-                                color: $primary-color2;
-                                text-align: center;
-                                text-decoration: underline;
-                                margin: 1.5rem;
-                            }
-                            .btn {
-                                font-family: ERASBD;
-                            }
-                        }
-                    }
-                    // section ends
-                    // four box starts
-                    .four_box {
-                        @include flex_property();
-                        margin: 30px 0;
-                        .school {
-                            width: 24.2%;
-                            background-color: $primary-color;
-                            border: 0;
-                            text-align: center;
-                            img {
-                                width: 100%;
-                                height: 220px;
-                                background-size: cover;
-                                background-position: center top;
-                            }
-                            h5 {
-                                font-size: 1.5rem;
-                                font-weight: 300;
-                                color: #fff;
-                                margin: 1rem 0 1.3rem 0;
-                            }
-                            .ten {
-                                font-weight: 200;
-                                overflow: auto;
-                                letter-spacing: 0;
-                            }
-                            .btn {
-                                margin-bottom: 5px;
-                            }
-                        }
-                    }
-                    .news {
-                        background-color: #333366;
-                        h1 {
-                            font-size: 2.5rem;
-                            font-weight: 500;
-                            text-align: center;
-                            font-family: ERASBD;
-                            color: #fff;
-                            padding: 10px;
-                        }
-                        .three_box {
-                            height: 100px;
-                            .news1 {
-                                background: rgba($color: #a09797, $alpha: 1);
-                                opacity: 0.7;
-                                border-radius: 10px;
-                                box-shadow: 15px 10px 10px $primary-color2 inset;
-                                h6 {
-                                    font-size: 1.3rem;
-                                    font-weight: 400;
-                                    color: #fff;
-                                }
-                            }
-                        }
-                    }
-                    // News ends
-                    // Contact details starts
-                    .contact {
-                        width: 100%;
-                        background-color: $primary-color2;
-                        background-image: linear-gradient(to bottom left, $primary-color, $primary-color2);
-                        .details {
-                            width: 100%;
-                            @include flex_property();
-                            .box {
-                                width: 32%;
-                                padding: 2rem;
-                                border-right: 1px solid gray;
-                                .box1 {
-                                    width: 100%;
-                                    text-align: center;
-                                    h2 {
-                                        color: #fff;
-                                        font-size: 1.5rem;
-                                        font-weight: 400;
-                                    }
-                                    .fa {
-                                        color: #fff;
-                                        font-size: 1.7rem;
-                                        padding: 1rem 1rem 0 0;
-                                    }
-                                    h3 {
-                                        color: #fff;
-                                        font-size: 1rem;
-                                        font-weight: 400;
-                                        margin-left: 1.7rem;
-                                        padding-bottom: 2rem;
-                                    }
-                                    .email {
-                                        font-size: 1.3rem;
-                                        padding-left: 0;
-                                    }
-                                    .address {
-                                        font-size: 1rem;
-                                        height: 3px;
-                                    }
-                                    ul {
-                                        li {
-                                            list-style: none;
-                                            transition: all 2s ease 1ms;
-                                            padding: 1rem;
-                                            a {
-                                                color: #fff;
-                                                text-decoration: none;
-                                                font-size: 1.5rem;
-                                                font-weight: 400;
-                                            }
-                                        }
-                                        li:hover {
-                                            background-color: $primary-color;
-                                            transform: translate(-5px, -10px);
-                                        }
-                                    }
-                                }
-                            }
-                            .no_border h2 {
-                                border-right: none;
-                                margin-bottom: 4rem;
-                            }
-                        }
-                    }
-                    // Contact details starts
-                    footer {
-                        width: 100%;
-                        background-color: $primary-color;
-                        h5 {
-                            color: #fff;
-                            text-align: center;
-                            font-size: 1.4rem;
-                            font-weight: 300;
-                            padding: 2rem 0 0.9rem 0;
-                            line-height: 1px;
-                        }
-                    }
+                    // height: 300px;
+                    margin-bottom: 10px;
                 }
-                
-                // media Queary
-                @media only screen and (max-width: 1052px) {
-                    .heading {
-                        flex-direction: column-reverse;
-                        align-items: center;
-                    }
+                h3 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    font-family: ERASBD;
+                    margin-bottom: 0.5rem;
+                    text-decoration: underline;
                 }
-                
-                // Tablet View ends
-                @media only screen and (max-width: 839px) and (min-width: 421px) {
-                    .container header .heading h3 {
-                        font-size: 1.2rem;
-                        header .heading .jh_logo {
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                    .container .main aside .supervisor h3 {
-                        font-size: 1.2rem;
-                    }
-                    .container .main aside .supervisor h4 {
-                        font-size: 1rem;
-                    }
-                    .container section .coureses h1 {
-                        font-size: 2.3rem;
-                    }
-                    .container section article h1 {
-                        font-size: 2.5rem;
-                    }
-                    .container section article h2 {
-                        font-size: 1.4rem;
-                    }
-                    .container section article h3 {
-                        text-align: left;
-                        font-size: 1.1rem;
-                        letter-spacing: 0.2px;
-                    }
-                    .container section article p {
-                        font-size: 0.9rem;
+                h4 {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    // main ends
+    // section starts
+    section {
+        article {
+            background-color: $primary-color2;
+            background-image: linear-gradient(0deg, $primary-color, $primary-color2);
+            padding: 2rem;
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                color: $primary-color;
+                text-align: center;
+                text-decoration: underline;
+            }
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: #fff;
+                text-align: center;
+                margin: 1rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: #fff;
+                letter-spacing: 0.5px;
+            }
+            p {
+                font-size: 1rem;
+                color: #fff;
+                text-align: justify;
+                letter-spacing: 1px;
+                line-height: 1.7rem;
+                margin-top: 1rem;
+            }
+            .btn {
+                background-color: $primary-color;
+                margin-top: 1.5rem;
+            }
+        }
+        // article ends
+        // coureses starts
+        .coureses {
+            text-align: center;
+            h1 {
+                font-size: 3rem;
+                font-family: ERASBD;
+                font-weight: 700;
+                color: $primary-color2;
+                text-align: center;
+                text-decoration: underline;
+                margin: 1.5rem;
+            }
+            .btn {
+                font-family: ERASBD;
+            }
+        }
+    }
+    // section ends
+    // four box starts
+    .four_box {
+        @include flex_property();
+        margin: 30px 0;
+        .school {
+            width: 24.2%;
+            background-color: $primary-color;
+            border: 0;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 220px;
+                background-size: cover;
+                background-position: center top;
+            }
+            h5 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                color: #fff;
+                margin: 1rem 0 1.3rem 0;
+            }
+            .ten {
+                font-weight: 200;
+                overflow: auto;
+                letter-spacing: 0;
+            }
+            .btn {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .news {
+        background-color: #333366;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            text-align: center;
+            font-family: ERASBD;
+            color: #fff;
+            padding: 10px;
+        }
+        .three_box {
+            height: 100px;
+            .news1 {
+                background: rgba($color: #a09797, $alpha: 1);
+                opacity: 0.7;
+                border-radius: 10px;
+                box-shadow: 15px 10px 10px $primary-color2 inset;
+                h6 {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // News ends
+    // Contact details starts
+    .contact {
+        width: 100%;
+        background-color: $primary-color2;
+        background-image: linear-gradient(to bottom left, $primary-color, $primary-color2);
+        .details {
+            width: 100%;
+            @include flex_property();
+            .box {
+                width: 32%;
+                padding: 1rem;
+                border-right: 1px solid gray;
+                .box1 {
+                    width: 100%;
+                    text-align: left;
+                    h2 {
+                        color: #fff;
+                        font-size: 1.5rem;
                         font-weight: 400;
-                        letter-spacing: normal;
-                        line-height: normal;
-                        color: #a09797;
                     }
-                    .container .four_box {
-                        padding: 5%;
+                    .fa {
+                        color: #fff;
+                        font-size: 1.7rem;
+                        padding: 1rem 1rem 0 0;
                     }
-                    .container .four_box .school {
-                        width: 47%;
-                        margin-bottom: 1rem;
+                    p {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        margin-left: 2rem;
+                        margin-bottom: 2rem;
                     }
-                    .container .contact .details .box {
-                        width: 100%;
-                        border-right: none;
-                        border-bottom: 2px solid gray;
-                        border-spacing: 3cm;
-                    }
-                    .container .contact .details .box .box1 {
-                        text-align: center;
-                    }
-                    .container .four_box .school .ten {
-                        font-weight: 300;
-                    }
-                }
-                
-                // mobile
-                @media only screen and (max-width: 540px) and (min-width: 0px) {
-                    .container header .heading h3 {
-                        font-size: 0.6rem;
-                        font-weight: 600;
-                    }
-                    .container .ciat_logo img {
-                        width: 100%;
-                    }
-                    .container .main .picture {
-                        width: 100%;
-                    }
-                    .container .main aside {
-                        width: 100%;
-                        margin-top: 1rem;
-                    }
-                    .container section article h1 {
-                        font-size: 1.8rem;
-                    }
-                    .container section article h2 {
+                    .email {
                         font-size: 1.3rem;
                     }
-                    .container section article h3 {
+                    .address {
                         font-size: 1rem;
-                        letter-spacing: 0.2px;
+                        height: 3px;
                     }
-                    .container section article p {
-                        font-size: 0.8rem;
-                        letter-spacing: normal;
-                        line-height: normal;
-                    }
-                    .container section .coureses h1 {
-                        font-size: 1rem;
-                        font-weight: 500;
-                    }
-                    .container .four_box .school {
-                        width: 100%;
-                        margin-bottom: 1.6rem;
-                    }
-                    .container section article h1 {
-                        font-size: 1.8rem;
-                    }
-                    .container section article h2 {
-                        font-size: 1.1rem;
-                    }
-                    .container section article h3 {
-                        text-align: left;
-                        font-size: 0.9rem;
-                        letter-spacing: 0.2px;
-                    }
-                    .container section article p {
-                        font-size: 0.8rem;
-                        font-weight: 300;
-                        letter-spacing: normal;
-                        line-height: normal;
-                        color: #a09797;
-                    }
-                    .container .contact .details .box {
-                        width: 100%;
-                        padding: 2rem;
-                        border-right: none;
-                        border-bottom: 2px solid gray;
-                    }
-                    .container .contact .details .box .box1 {
-                        text-align: center;
-                    }
-                    .container footer h5 {
-                        font-size: 1rem;
-                    }
-                    .container .contact .details .box .box1 p {
-                        font-size: 0.9rem;
-                    }
-                    .container nav .menubar ul {
-                        width: 100%;
-                        display: none;
-                        flex-direction: column;
-                        background-color: $primary-color;
-                        position: absolute;
-                        left: 0;
-                        top: 100%;
-                        text-align: center;
-                    }
-                    .container nav .menubar li {
-                        padding: 1rem;
-                    }
-                    .container nav .menubar .fa {
-                        display: block;
-                        text-align: right;
-                        padding: .9rem;
+                    ul {
+                        li {
+                            list-style: none;
+                            transition: all 2s ease 1ms;
+                            padding: 1rem;
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                            }
+                        }
+                        li:hover {
+                            background-color: $primary-color;
+                            transform: translate(-5px, -10px);
+                        }
                     }
                 }
+            }
+            .no_border h2 {
+                padding: 1rem;
+                border-right: none;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    // Contact details starts
+    footer {
+        // height: 90px;
+        background-color: $primary-color;
+        h5 {
+            color: #fff;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 300;
+            padding: 2rem 0 0.9rem 0;
+            line-height: 1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1052px) {
+    .heading {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+// Tablet View ends
+@media only screen and (max-width: 839px) and (min-width: 421px) {
+    .container header .heading h3 {
+        font-size: 1.2rem;
+        header .heading .jh_logo {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .container .main aside .supervisor h3 {
+        font-size: 1.2rem;
+    }
+    .container .main aside .supervisor h4 {
+        font-size: 1rem;
+    }
+    .container section .coureses h1 {
+        font-size: 2.3rem;
+    }
+    .container section article h1 {
+        font-size: 2.5rem;
+    }
+    .container section article h2 {
+        font-size: 1.4rem;
+    }
+    .container section article h3 {
+        text-align: left;
+        font-size: 1.1rem;
+        letter-spacing: 0.2px;
+    }
+    .container section article p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: normal;
+        color: #a09797;
+    }
+    .container .four_box {
+        padding: 5%;
+    }
+    .container .four_box .school {
+        width: 47%;
+        margin-bottom: 1rem;
+    }
+    .container .contact .details .box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid gray;
+        border-spacing: 3cm;
+    }
+    .container .contact .details .box .box1 {
+        text-align: center;
+    }
+    .container .four_box .school .ten {
+        font-weight: 300;
+    }
+}
+
+// mobile
+@media only screen and (max-width: 540px) and (min-width: 0px) {
+    .container header .heading h3 {
+        font-size: 0.6rem;
+        font-weight: 600;
+    }
+    .container .ciat_logo img {
+        width: 100%;
+    }
+    .container .main .picture {
+        width: 100%;
+    }
+    .container .main aside {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .container section article h1 {
+        font-size: 1.8rem;
+    }
+    .container section article h2 {
+        font-size: 1.3rem;
+    }
+    .container section article h3 {
+        font-size: 1rem;
+        letter-spacing: 0.2px;
+    }
+    .container section article p {
+        font-size: 0.8rem;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    .container section .coureses h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .container .four_box .school {
+        width: 100%;
+        margin-bottom: 1.6rem;
+    }
+    .container section article h1 {
+        font-size: 1.8rem;
+    }
+    .container section article h2 {
+        font-size: 1.1rem;
+    }
+    .container section article h3 {
+        text-align: left;
+        font-size: 0.9rem;
+        letter-spacing: 0.2px;
+    }
+    .container section article p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        letter-spacing: normal;
+        line-height: normal;
+        color: #a09797;
+    }
+    .container .contact .details .box {
+        width: 100%;
+        padding: 2rem;
+        border-right: none;
+        border-bottom: 2px solid gray;
+    }
+    .container .contact .details .box .box1 {
+        text-align: center;
+    }
+    .container footer h5 {
+        font-size: 1rem;
+    }
+    .container .contact .details .box .box1 p {
+        font-size: 0.9rem;
+    }
+    .container nav .menubar ul {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        text-align: center;
+    }
+    .container nav .menubar li {
+        padding: 1rem;
+    }
+    .container nav .menubar .fa {
+        display: block;
+        text-align: right;
+        padding: .9rem;
+    }
+}

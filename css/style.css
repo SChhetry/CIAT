@@ -142,6 +142,9 @@ html {
 
 .container .main .picture {
   width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-size: cover;
   background-position: center top;
   border: 3px solid #333366;
@@ -160,6 +163,9 @@ html {
 
 .container .main aside .supervisor {
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .container .main aside .supervisor img {
@@ -339,13 +345,13 @@ html {
 
 .container .contact .details .box {
   width: 32%;
-  padding: 2rem;
+  padding: 1rem;
   border-right: 1px solid gray;
 }
 
 .container .contact .details .box .box1 {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .container .contact .details .box .box1 h2 {
@@ -360,17 +366,16 @@ html {
   padding: 1rem 1rem 0 0;
 }
 
-.container .contact .details .box .box1 h3 {
+.container .contact .details .box .box1 p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  margin-left: 1.7rem;
-  padding-bottom: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container .contact .details .box .box1 .email {
   font-size: 1.3rem;
-  padding-left: 0;
 }
 
 .container .contact .details .box .box1 .address {
@@ -399,12 +404,12 @@ html {
 }
 
 .container .contact .details .no_border h2 {
+  padding: 1rem;
   border-right: none;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .container footer {
-  width: 100%;
   background-color: #333366;
 }
 
