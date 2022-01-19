@@ -431,7 +431,6 @@ html {
 
 .container .schools_name .four_box .school img {
   width: 100%;
-  height: 200px;
   background-size: cover;
   background-position: center top;
 }
@@ -655,9 +654,7 @@ html {
     font-size: 1.6rem;
   }
   .container .main aside .supervisor .box1 {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .container .main aside .supervisor .box2 {
     width: 100%;
@@ -710,9 +707,6 @@ html {
   }
   .container .main section article p {
     font-size: 0.8rem;
-  }
-  .container .main section figure {
-    display: none;
   }
   .container .main aside {
     width: 100%;
@@ -768,7 +762,6 @@ html {
   .container nav .menubar .fa {
     display: block;
     text-align: right;
-    padding: 0.5rem;
   }
   .container .contact .details .box {
     width: 100%;
