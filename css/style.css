@@ -47,8 +47,7 @@ html {
   background-color: #333366;
 }
 
-.container header .heading {
-  width: 100%;
+.container header .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +58,17 @@ html {
           justify-content: space-between;
 }
 
-.container header .heading h3 {
+.container header .header h3 {
   font-size: 2rem;
   font-weight: 400;
   color: #fff;
   padding: 1.2rem 0;
 }
 
-.container header .heading .jh_logo {
+.container header .header .jh_logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding-top: 0.5rem;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -74,16 +76,37 @@ html {
 }
 
 .container .ciat_logo {
-  width: 100%;
-  padding: 1rem 0;
+  border-left: 2px solid #2e2828;
+  margin-top: 1.5rem;
+  padding: 0 0.5rem;
 }
 
-.container .ciat_logo img {
-  width: 60%;
+.container .ciat_logo h1 {
+  display: inline-block;
+  line-height: 2.7rem;
+  font-family: 'Quattrocento', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  border-bottom: 2px solid #2e2828;
+  color: #747d8c;
+  padding-top: 0.6rem;
+}
+
+.container .ciat_logo h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  color: #747d8c;
+}
+
+.container .ciat_logo .s {
+  color: #6b6868;
+  font-size: 1.8rem;
 }
 
 .container nav {
   background-color: #333366;
+  margin-top: 2rem;
 }
 
 .container nav .menubar {
@@ -128,6 +151,48 @@ html {
   padding-right: 0.5rem;
 }
 
+.container .heading {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+
+.container .heading h1 {
+  font-family: 'Quattrocento', serif;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #2e2828;
+  line-height: 2.8rem;
+  padding-top: 1rem;
+}
+
+.container .heading h2 {
+  line-height: 2.5rem;
+  font-family: 'Quattrocento', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #747d8c;
+  padding-top: 0.6rem;
+}
+
+.container .heading h3 {
+  font-size: 1.9rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  color: #747d8c;
+}
+
+.container .heading p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #2e2828;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
 .container .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,119 +203,90 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1rem;
-}
-
-.container .main .picture {
-  width: 70%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-size: cover;
-  background-position: center top;
-  border: 3px solid #333366;
-}
-
-.container .main .picture img {
-  width: 100%;
-}
-
-.container .main aside {
-  width: 27%;
   text-align: center;
-  color: #333366;
-  border: 3px solid #333366;
 }
 
-.container .main aside .supervisor {
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+.container .main section {
+  width: 65%;
+  border: 2px solid #fff;
+  border-radius: 1px;
+  padding-right: 1rem;
 }
 
-.container .main aside .supervisor img {
-  width: 100%;
+.container .main section article {
+  border: 2px solid #ddd;
+  border-radius: 5px;
   margin-bottom: 10px;
+  padding: 0.5rem;
 }
 
-.container .main aside .supervisor h3 {
-  font-size: 1.5rem;
+.container .main section article h1 {
+  font-size: 2.6rem;
   font-weight: 500;
-  font-family: ERASBD;
-  margin-bottom: 0.5rem;
-  text-decoration: underline;
-}
-
-.container .main aside .supervisor h4 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.container section article {
-  background-color: #ff3333;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#333366), to(#ff3333));
-  background-image: linear-gradient(0deg, #333366, #ff3333);
-  padding: 2rem;
-  text-align: center;
-}
-
-.container section article h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333366;
+  color: #4b4b4b;
   text-align: center;
   text-decoration: underline;
+  padding: 0.7rem;
 }
 
-.container section article h2 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  margin: 1rem;
-}
-
-.container section article h3 {
+.container .main section article h3 {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #fff;
+  color: #2e2828;
   letter-spacing: 0.5px;
+  text-align: left;
 }
 
-.container section article p {
+.container .main section article p {
   font-size: 1rem;
-  color: #fff;
+  color: #2e2828;
   text-align: justify;
   letter-spacing: 1px;
   line-height: 1.7rem;
   margin-top: 1rem;
 }
 
-.container section article .btn {
+.container .main section article .btn {
   background-color: #333366;
   margin-top: 1.5rem;
 }
 
-.container section .coureses {
+.container .main section figure {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.container .main section figure .gallary {
+  width: 100%;
+  height: 70px;
+  background-color: #c3c5c7;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container .main section figure .gallary h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2e2828;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.container .main section figure img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.container .main aside {
+  width: 35%;
   text-align: center;
+  color: #333366;
 }
 
-.container section .coureses h1 {
-  font-size: 3rem;
-  font-family: ERASBD;
-  font-weight: 700;
-  color: #ff3333;
-  text-align: center;
-  text-decoration: underline;
-  margin: 1.5rem;
-}
-
-.container section .coureses .btn {
-  font-family: ERASBD;
-}
-
-.container .four_box {
+.container .main aside .supervisor {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,76 +295,155 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0;
+  border: 1px solid #747d8c;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
-.container .four_box .school {
-  width: 24.2%;
-  background-color: #333366;
-  border: 0;
-  text-align: center;
+.container .main aside .supervisor .box1 {
+  width: 45%;
 }
 
-.container .four_box .school img {
+.container .main aside .supervisor .box1 img {
   width: 100%;
-  height: 220px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+
+.container .main aside .supervisor .box2 {
+  width: 55%;
+  padding-top: 3rem;
+}
+
+.container .main aside .supervisor .box2 h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.container .main aside .supervisor .box2 .khalid {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.container .main aside .supervisor .box2 .medal {
+  font-size: 1rem;
+  font-weight: 400;
+  color: blue;
+}
+
+.container .main aside .supervisor .box2 .aside_btn {
+  width: 8rem;
+  height: 30px;
+  background-color: blue;
+  font-size: 1.1rem;
+}
+
+.container .main aside .our_coureses {
+  width: 100%;
+  background-color: #57606f;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.container .main aside .our_coureses h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 0.7rem;
+  display: inline-block;
+}
+
+.container .main aside .our_coureses .course_name {
+  text-align: left;
+}
+
+.container .main aside .our_coureses .course_name .course_list {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.container .main aside .notice {
+  background-color: #dddddd;
+  border-radius: 5px;
+}
+
+.container .main aside .notice h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #2e2828;
+  text-decoration: underline;
+}
+
+.container .main aside .notice .notice_box h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #2e2828;
+}
+
+.container .schools_name {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.container .schools_name h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #4b4b4b;
+  text-align: center;
+  padding: 0.7rem;
+}
+
+.container .schools_name .four_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container .schools_name .four_box .school {
+  width: 24.2%;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  color: #2e2828;
+}
+
+.container .schools_name .four_box .school img {
+  width: 100%;
+  height: 200px;
   background-size: cover;
   background-position: center top;
 }
 
-.container .four_box .school h5 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #fff;
+.container .schools_name .four_box .school h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
   margin: 1rem 0 1.3rem 0;
 }
 
-.container .four_box .school .ten {
-  font-weight: 200;
-  overflow: auto;
-  letter-spacing: 0;
-}
-
-.container .four_box .school .btn {
+.container .schools_name .four_box .school .btn {
   margin-bottom: 5px;
 }
 
-.container .news {
-  background-color: #333366;
-}
-
-.container .news h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  text-align: center;
-  font-family: ERASBD;
-  color: #fff;
-  padding: 10px;
-}
-
-.container .news .three_box {
-  height: 100px;
-}
-
-.container .news .three_box .news1 {
-  background: #a09797;
-  opacity: 0.7;
-  border-radius: 10px;
-  -webkit-box-shadow: 15px 10px 10px #ff3333 inset;
-          box-shadow: 15px 10px 10px #ff3333 inset;
-}
-
-.container .news .three_box .news1 h6 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #fff;
-}
-
 .container .contact {
-  width: 100%;
-  background-color: #ff3333;
-  background-image: -webkit-gradient(linear, right top, left bottom, from(#333366), to(#ff3333));
-  background-image: linear-gradient(to bottom left, #333366, #ff3333);
+  margin-bottom: 1rem;
 }
 
 .container .contact .details {
@@ -341,36 +456,34 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 2px solid #ddd;
+  border-radius: 5px;
 }
 
 .container .contact .details .box {
   width: 32%;
   padding: 1rem;
-  border-right: 1px solid gray;
 }
 
 .container .contact .details .box .box1 {
   width: 100%;
   text-align: left;
-  text-align: left;
+  color: #2e2828;
 }
 
 .container .contact .details .box .box1 h2 {
-  color: #fff;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
 .container .contact .details .box .box1 .fa {
-  color: #fff;
   font-size: 1.7rem;
   padding: 1rem 1rem 0 0;
 }
 
-.container .contact .details .box .box1 P {
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 400;
+.container .contact .details .box .box1 p {
+  font-size: 1rem;
+  font-weight: 300;
   margin-left: 2rem;
   margin-bottom: 2rem;
 }
@@ -392,7 +505,7 @@ html {
 }
 
 .container .contact .details .box .box1 ul li a {
-  color: #fff;
+  color: #2e2828;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 400;
@@ -404,10 +517,9 @@ html {
           transform: translate(-5px, -10px);
 }
 
-.container .contact .details .no_border h2 {
-  padding: 1rem;
-  border-right: none;
-  margin-bottom: 2rem;
+.container .contact .details .border {
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
 }
 
 .container footer {
@@ -489,8 +601,8 @@ html {
   }
 }
 
-@media only screen and (max-width: 1052px) {
-  .heading {
+@media only screen and (max-width: 1072px) {
+  .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -502,11 +614,14 @@ html {
 }
 
 @media only screen and (max-width: 839px) and (min-width: 421px) {
-  .container header .heading h3 {
+  .container header .header h3 {
     font-size: 1.2rem;
   }
-  .container header .heading h3 header .heading .jh_logo img {
+  .container header .header h3 header .header .jh_logo img {
     width: 100%;
+  }
+  .container .ciat_logo h1 {
+    font-size: 2rem;
   }
   .container .main aside .supervisor h3 {
     font-size: 1.2rem;
@@ -557,12 +672,17 @@ html {
 }
 
 @media only screen and (max-width: 540px) and (min-width: 0px) {
-  .container header .heading h3 {
+  .container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .container header .header h3 {
     font-size: 0.6rem;
     font-weight: 600;
   }
-  .container .ciat_logo img {
-    width: 100%;
+  .container .ciat_logo h1 {
+    font-size: 1.7rem;
   }
   .container .main .picture {
     width: 100%;

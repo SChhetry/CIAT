@@ -3,6 +3,7 @@ $(".fa").click(function() {
     $("ul").slideToggle();
 });
 
+
 var myVar;
 
 function myFunction() {
