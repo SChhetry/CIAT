@@ -711,6 +711,9 @@ html {
   .container .main section figure {
     width: 100%;
   }
+  .container .main section figure img {
+    width: 100%;
+  }
   .container .main aside {
     width: 100%;
   }
