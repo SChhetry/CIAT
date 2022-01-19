@@ -311,9 +311,6 @@ html {
 
 .container .main aside .supervisor .box1 img {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   border-radius: 5px;
 }
 
