@@ -697,7 +697,7 @@ html {
   .container .main section article {
     width: 100%;
     position: absolute;
-    top: 30rem;
+    top: 33rem;
   }
   .container .main section article h1 {
     font-size: 2rem;
@@ -707,6 +707,9 @@ html {
   }
   .container .main section article p {
     font-size: 0.8rem;
+  }
+  .container .main section figure {
+    width: 100%;
   }
   .container .main aside {
     width: 100%;
