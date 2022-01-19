@@ -55,10 +55,9 @@
                     // header starts
                     header {
                         background-color: $primary-color;
-                        // overflow: auto;
                         .header {
+                            width: 100%;
                             @include flex_property();
-                            // width: 80%;
                             h3 {
                                 font-size: 2rem;
                                 font-weight: 400;
@@ -75,6 +74,7 @@
                     // header ends
                     // logo starts
                     .ciat_logo {
+                        width: 100%;
                         border-left: 2px solid rgb(46, 40, 40);
                         margin-top: 1.5rem;
                         padding: 0 0.5rem;
@@ -105,6 +105,7 @@
                         background-color: $primary-color;
                         margin-top: 2rem;
                         .menubar {
+                            width: 100%;
                             margin-bottom: 15px;
                             position: relative;
                             ul {
@@ -138,6 +139,7 @@
                     }
                     // article (heading)  starts
                     .heading {
+                        width: 100%;
                         padding: 1rem;
                         margin-bottom: 1rem;
                         border-radius: 5px;
@@ -177,9 +179,11 @@
                     // article (heading) ends
                     // main starts
                     .main {
+                        width: 100%;
                         @include flex_property();
                         margin-bottom: 1rem;
                         text-align: center;
+                        position: relative;
                         // section (article/figure)starts
                         section {
                             width: 65%;
@@ -187,6 +191,7 @@
                             border-radius: 1px;
                             padding-right: 1rem;
                             article {
+                                width: 100%;
                                 border: 2px solid #ddd;
                                 border-radius: 5px;
                                 margin-bottom: 10px;
@@ -222,8 +227,6 @@
                             figure {
                                 width: 100%;
                                 padding: 0.5rem;
-                                border: 2px solid #ddd;
-                                border-radius: 5px;
                                 .gallary {
                                     width: 100%;
                                     height: 70px;
@@ -304,19 +307,18 @@
                                     margin-top: 0.7rem;
                                     display: inline-block;
                                 }
-                                .course_name {
-                                    text-align: left;
-                                    .course_list {
-                                        font-size: 1rem;
-                                        font-weight: 300;
-                                        color: #fff;
-                                        margin: 1.5rem;
-                                        padding-bottom: 1rem;
-                                        line-height: 2rem;
-                                    }
+                                text-align: left;
+                                .course_list {
+                                    font-size: 1rem;
+                                    font-weight: 300;
+                                    color: #fff;
+                                    margin: 1.5rem;
+                                    padding-bottom: 1rem;
+                                    line-height: 2rem;
                                 }
                             }
                             .notice {
+                                width: 100%;
                                 background-color: #dddddd;
                                 border-radius: 5px;
                                 h4 {
@@ -327,6 +329,7 @@
                                     text-decoration: underline;
                                 }
                                 .notice_box {
+                                    width: 100%;
                                     h5 {
                                         font-size: 1rem;
                                         font-weight: 400;
@@ -340,8 +343,7 @@
                     // main ends
                     // section (school_name/four_box/school) starts 
                     .schools_name {
-                        border: 2px solid #ddd;
-                        border-radius: 5px;
+                        width: 100%;
                         margin-bottom: 1rem;
                         h2 {
                             font-size: 2.6rem;
@@ -351,6 +353,7 @@
                             padding: 0.7rem;
                         }
                         .four_box {
+                            width: 100%;
                             @include flex_property();
                             margin-bottom: 1rem;
                             .school {
@@ -379,12 +382,11 @@
                     // section (school_name/four_box/school) ends 
                     // contact (details/box/box1/box_border) div starts
                     .contact {
+                        width: 100%;
                         margin-bottom: 1rem;
                         .details {
                             width: 100%;
                             @include flex_property();
-                            border: 2px solid #ddd;
-                            border-radius: 5px;
                             .box {
                                 width: 32%;
                                 padding: 1rem;
@@ -440,14 +442,17 @@
                     }
                     // contact (details/box/box1/box_border) div ends
                     footer {
+                        width: 100%;
                         background-color: $primary-color;
-                        h5 {
-                            color: #fff;
-                            text-align: center;
-                            font-size: 1.4rem;
-                            font-weight: 300;
-                            padding: 2rem 0 0.9rem 0;
-                            line-height: 1px;
+                        .copyright {
+                            h5 {
+                                color: #fff;
+                                text-align: center;
+                                font-size: 1.4rem;
+                                font-weight: 300;
+                                padding: 2rem 0 0.9rem 0;
+                                line-height: 1px;
+                            }
                         }
                     }
                 }
@@ -517,148 +522,133 @@
                     }
                 }
                 
-                @media only screen and (max-width: 1072px) {
-                    .header {
+                // media queary
+                @media only screen and (max-width:1072px) {
+                    .container header .header {
                         flex-direction: column-reverse;
                         align-items: center;
                     }
+                    .container .main aside .our_coureses .course_name .course_list {
+                        font-size: 0.8rem;
+                    }
                 }
                 
-                // Tablet View ends
-                @media only screen and (max-width: 839px) and (min-width: 421px) {
-                    .container header .header h3 {
-                        font-size: 1.2rem;
-                        header .header .jh_logo {
-                            img {
-                                width: 100%;
-                            }
-                        }
+                @media only screen and (max-width:912px) {
+                    .container header .header {
+                        flex-direction: column-reverse;
+                        align-items: center;
                     }
                     .container .ciat_logo h1 {
                         font-size: 2rem;
                     }
-                    .container .main aside .supervisor h3 {
-                        font-size: 1.2rem;
+                    .container .main aside .supervisor .box2 {
+                        padding: 0.4rem 0;
                     }
-                    .container .main aside .supervisor h4 {
+                    .container .main aside .supervisor .box2 .khalid {
+                        font-size: 0.8rem;
+                    }
+                    .container .main aside .our_coureses .course_name .course_list {
+                        font-size: 0.8rem;
+                    }
+                    .container .main aside .our_coureses h4 {
                         font-size: 1rem;
                     }
-                    .container section .coureses h1 {
-                        font-size: 2.3rem;
-                    }
-                    .container section article h1 {
-                        font-size: 2.5rem;
-                    }
-                    .container section article h2 {
-                        font-size: 1.4rem;
-                    }
-                    .container section article h3 {
-                        text-align: left;
-                        font-size: 1.1rem;
-                        letter-spacing: 0.2px;
-                    }
-                    .container section article p {
-                        font-size: 0.9rem;
-                        font-weight: 400;
-                        letter-spacing: normal;
-                        line-height: normal;
-                        color: #a09797;
-                    }
-                    .container .four_box {
-                        padding: 5%;
-                    }
-                    .container .four_box .school {
-                        width: 47%;
-                        margin-bottom: 1rem;
-                    }
-                    .container .contact .details .box {
-                        width: 100%;
-                        border-right: none;
-                        border-bottom: 2px solid gray;
-                        border-spacing: 3cm;
-                    }
-                    .container .contact .details .box .box1 {
-                        text-align: center;
-                    }
-                    .container .four_box .school .ten {
-                        font-weight: 300;
+                    .container .main aside .our_coureses .course_name .course_list {
+                        font-size: 0.7rem;
                     }
                 }
                 
-                // mobile
-                @media only screen and (max-width: 540px) and (min-width: 0px) {
-                    .container {
+                @media only screen and (max-width:836px) {
+                    .container header .header h3 {
+                        font-size: 1.6rem;
+                    }
+                    .container .main aside .supervisor .box1 {
                         width: fit-content;
                     }
+                    .container .main aside .supervisor .box2 {
+                        width: 100%;
+                    }
+                    .container .main aside .supervisor .box2 .khalid {
+                        font-size: 1.1rem;
+                    }
+                }
+                
+                @media only screen and (max-width:550px) and (min-width:0px) {
                     .container header .header h3 {
-                        font-size: 0.6rem;
-                        font-weight: 600;
+                        font-size: 0.8rem;
+                    }
+                    .container header .header {
+                        flex-direction: column-reverse;
+                        align-items: center;
                     }
                     .container .ciat_logo h1 {
-                        font-size: 1.7rem;
+                        font-size: 2.5rem;
                     }
-                    .container .main .picture {
+                    .container .heading h1 {
+                        font-size: 3rem;
+                    }
+                    .container .heading {
+                        padding: 0;
+                    }
+                    .container .heading h2 {
+                        font-size: 1.5rem;
+                        line-height: 1.8rem;
+                        padding: 0;
+                    }
+                    .container .heading p {
+                        padding: 0.5rem;
+                    }
+                    .container .main section article {
                         width: 100%;
+                        position: absolute;
+                        top: 19rem;
+                    }
+                    .container .main section article h1 {
+                        font-size: 2rem;
+                    }
+                    .container .main section article h3 {
+                        font-size: 1rem;
+                    }
+                    .container .main section article p {
+                        font-size: 0.8rem;
+                    }
+                    .container .main section figure {
+                        display: none;
                     }
                     .container .main aside {
                         width: 100%;
-                        margin-top: 1rem;
                     }
-                    .container section article h1 {
-                        font-size: 1.8rem;
+                    .container .main aside .supervisor .box1 {
+                        width: 45%;
                     }
-                    .container section article h2 {
-                        font-size: 1.3rem;
+                    .container .main aside .supervisor .box2 {
+                        width: 55%;
                     }
-                    .container section article h3 {
-                        font-size: 1rem;
-                        letter-spacing: 0.2px;
-                    }
-                    .container section article p {
-                        font-size: 0.8rem;
-                        letter-spacing: normal;
-                        line-height: normal;
-                    }
-                    .container section .coureses h1 {
-                        font-size: 1rem;
-                        font-weight: 500;
-                    }
-                    .container .four_box .school {
-                        width: 100%;
-                        margin-bottom: 1.6rem;
-                    }
-                    .container section article h1 {
-                        font-size: 1.8rem;
-                    }
-                    .container section article h2 {
-                        font-size: 1.1rem;
-                    }
-                    .container section article h3 {
-                        text-align: left;
+                    .container .main aside .supervisor .box2 .khalid {
                         font-size: 0.9rem;
-                        letter-spacing: 0.2px;
+                        padding-top: 0.5rem;
                     }
-                    .container section article p {
+                    .container .main aside .supervisor .box2 {
+                        padding: 2rem 0;
+                    }
+                    .container .main aside .supervisor .box2 .khalid {
                         font-size: 0.8rem;
-                        font-weight: 300;
-                        letter-spacing: normal;
-                        line-height: normal;
-                        color: #a09797;
                     }
-                    .container .contact .details .box {
-                        width: 100%;
-                        padding: 2rem;
-                        border-right: none;
-                        border-bottom: 2px solid gray;
+                    .container .main aside .our_coureses {
+                        margin-top: 34rem;
                     }
-                    .container .contact .details .box .box1 {
-                        text-align: center;
+                    .container .main aside .our_coureses .course_name .course_list {
+                        font-size: 0.8rem;
                     }
-                    .container footer h5 {
+                    .container .main aside .our_coureses h4 {
                         font-size: 1rem;
                     }
-                    .container .contact .details .box .box1 p {
-                        font-size: 0.9rem;
+                    .container .main aside .our_coureses .course_list {
+                        font-size: 0.8rem;
+                    }
+                    .container .schools_name .four_box .school {
+                        width: 100%;
+                        margin-bottom: 1rem;
                     }
                     .container nav .menubar ul {
                         width: 100%;
@@ -671,11 +661,14 @@
                         text-align: center;
                     }
                     .container nav .menubar li {
-                        padding: 1rem;
+                        padding: 1rem 0;
                     }
                     .container nav .menubar .fa {
                         display: block;
                         text-align: right;
-                        padding: .9rem;
+                        padding: 0.5rem;
+                    }
+                    .container .contact .details .box {
+                        width: 100%;
                     }
                 }
