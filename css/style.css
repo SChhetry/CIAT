@@ -209,7 +209,6 @@ html {
           justify-content: space-between;
   margin-bottom: 1rem;
   text-align: center;
-  position: relative;
 }
 
 .container .main section {
@@ -696,8 +695,6 @@ html {
   }
   .container .main section article {
     width: 100%;
-    position: absolute;
-    top: 33rem;
   }
   .container .main section article h1 {
     font-size: 2rem;
@@ -707,6 +704,19 @@ html {
   }
   .container .main section article p {
     font-size: 0.8rem;
+  }
+  .container .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .main section {
+    width: 100%;
+    padding-right: 0;
   }
   .container .main section figure {
     width: 100%;
@@ -732,9 +742,6 @@ html {
   }
   .container .main aside .supervisor .box2 .khalid {
     font-size: 0.8rem;
-  }
-  .container .main aside .our_coureses {
-    margin-top: 34rem;
   }
   .container .main aside .our_coureses .course_name .course_list {
     font-size: 0.8rem;
@@ -772,6 +779,9 @@ html {
   }
   .container .contact .details .box {
     width: 100%;
+  }
+  .ciat_logo {
+    margin-left: 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
