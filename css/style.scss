@@ -442,6 +442,13 @@
                         width: 100%;
                         background-color: $primary-color;
                         .copyright {
+                            p {
+                                font-size: 1rem;
+                                font-weight: 100;
+                                color: #fff;
+                                padding: 1rem;
+                                text-align: right;
+                            }
                             h5 {
                                 color: #fff;
                                 text-align: center;

@@ -528,6 +528,14 @@ html {
   background-color: #333366;
 }
 
+.container footer .copyright p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+  padding: 1rem;
+  text-align: right;
+}
+
 .container footer .copyright h5 {
   color: #fff;
   text-align: center;
